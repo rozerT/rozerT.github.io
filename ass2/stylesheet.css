@@ -16,6 +16,15 @@ header
     padding: 25px;
 }
 
+#menubar
+{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    font-size: 7vw;
+    display: none;
+}
+
 #nav
 {
     position: absolute;
@@ -202,6 +211,17 @@ footer a:hover
     color: blueviolet;
 }
 
+#social-media-mob
+{
+    display: none;
+    font-size:50px;
+}
+
+#social-media-mob i:hover
+{
+    color: blueviolet;
+}
+
 #social-media nav
 {  
     word-spacing: 15px;
@@ -246,9 +266,9 @@ footer a:hover
 
 #buy
 {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
+    position: relative;
+    bottom: 5px;
+    right: -15px;
     padding: 1% 2% 1% 2%;
     background-color: rgb(49, 49, 49);
     border: 0;
@@ -281,3 +301,124 @@ footer a:hover
     display: grid;
     grid-template-columns: 50% 50%;
 }
+
+@media (max-width: 1110px)
+{
+    #buy
+    {
+        display: block;
+        position: relative;
+        right: 0;
+        margin-top: 10px;
+    }
+    /*Product About CSS*/
+    #store-item div
+    {
+        place-content: center;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media (max-width: 855px)
+{
+    main
+    {
+        width: 95%;
+    }
+    .item1
+    {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .item2
+    {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    .item3
+    {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .item4
+    {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    /*Product About CSS*/
+    #buy
+    {
+        left: auto;
+        right: 5px;
+        bottom: 3px;
+    }
+
+    #contactss div
+    {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+@media (max-width: 720px)
+{
+    #menubar
+    {
+        display: block;
+    }
+    #nav
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 580px) {
+    main
+    {
+        width: 98.5%;
+    }
+
+    #icon
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        max-width: fit-content;
+    }
+
+    .dot
+    {
+        display: none;
+    }
+
+    .item
+    {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    footer div
+    {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+    }
+
+    #social-media
+    {
+        display: none;
+    }
+
+    #social-media-mob
+    {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+    }
+    #social-media-mob nav
+    {   
+        word-spacing: 15px;
+        text-align: center;
+    }
+  }
